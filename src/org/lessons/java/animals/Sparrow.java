@@ -1,18 +1,21 @@
 package org.lessons.java.animals;
 
-public class Bird extends Animals implements CanFly{
+public class Sparrow extends Animals implements CanFly{
+    public Sparrow(String name) {
+        super(name);
+    }
+
     @Override
     public void eat() {
-        System.out.println("Semi");
+        System.out.println("seeds");
     }
 
     @Override
     public void makeNoise() {
         System.out.println("Cip Cip");
     }
-
     @Override
     public void fly() {
-        System.out.println("sono un uccello e posso volare");
+        System.out.println("i am a sparrow and i can fly");
     }
 }
