@@ -1,6 +1,7 @@
 package org.lessons.java.creator;
 
 public class PlayStation implements Device {
+//
 
     @Override
     public void play() {

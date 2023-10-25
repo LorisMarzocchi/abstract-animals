@@ -6,14 +6,14 @@ public class Creator {
         //impedisce la creazione di oggetti di tipo Creator
     }
 
-    public static Device create(int scelta){  //String scelta
+    public static Device create(String scelta){  //String scelta
 
         switch (scelta){
-            case 1:
-//            case "DvdPlayer":
+//            case 1:
+            case "DvdPlayer":
                 return new DvdPlayer();
-            case 2:
-//            case "PlayStation":
+//            case 2:
+            case "PlayStation":
                 return new PlayStation();
 
             default:
