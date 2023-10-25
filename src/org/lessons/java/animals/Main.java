@@ -15,8 +15,9 @@ public class Main {
             animal.eat();
             animal.sleep();
 
+
             if (animal instanceof CanFly) {
-                faiVolare((CanFly) animal);
+                faiVolare((CanFly) animal); //Cast dati
             }
             if (animal instanceof CanSwim) {
                 faiNuotare((CanSwim) animal);
@@ -25,10 +26,10 @@ public class Main {
         }
 
     }
-    public static void faiVolare(CanFly animals){
-        animals.fly();
+    public static void faiVolare(CanFly animalsFly){
+        animalsFly.fly();
     }
-    public static void faiNuotare(CanSwim animals) {
-        animals.swim();
+    public static void faiNuotare(CanSwim animalsSwim) {
+        animalsSwim.swim();
     }
 }
